@@ -3,8 +3,8 @@ from dnarest_api_getdevices import get_devices
 import requests
 import urllib3
 import json
+from dnarest_constants import BASE_URL
 
-BASE_URL = "https://sandboxdnac.cisco.com"
 
 def add_device(token):
     url = "/dna/intent/api/v1/network-device"

@@ -1,8 +1,7 @@
 import requests
 import urllib3 
 from dna_token import get_token
-
-BASE_URL = "https://sandboxdnac.cisco.com"
+from dnarest_constants import BASE_URL
 
 def get_devices(token):
     devices_url = "/dna/intent/api/v1/network-device"
