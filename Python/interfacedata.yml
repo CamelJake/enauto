@@ -1,0 +1,9 @@
+---
+ietf-interfaces:interface:
+  - name: Loopback69
+    description: test
+    type: softwareLoopback
+    ietf-ip:ipv4:
+      address:
+       - ip: 10.1.1.100
+         netmask: 255.255.255.255
