@@ -1,0 +1,9 @@
+{
+    "name":"Test range scan",
+    "discoveryType": "Range",
+    "ipAddressList": "10.10.20.175-10.10.20.180", 
+    "protocolOrder": "ssh,telnet",
+    "preferredMgmtIPMethod": "None",
+    "timeout":1,
+    "globalCredentialIdList": ["567c98b2-4d2f-4c8a-9832-a6758de7fd82", "240a641a-a172-4891-b355-1037ab71c318", "93e3e467-00f8-4370-9f41-606f969df4fb"]
+}

@@ -1,0 +1,8 @@
+{
+    "name":"Test range scan",
+    "discoveryType": "Range",
+    "ipAddressList": "10.10.20.175-10.10.20.180", 
+    "protocolOrder": "ssh,telnet",
+    "preferredMgmtIPMethod": "None",
+    "timeout":1
+}
