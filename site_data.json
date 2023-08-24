@@ -1,0 +1,479 @@
+{
+  "response": [
+    {
+      "additionalInfo": [],
+      "name": "Global",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "siteNameHierarchy": "Global"
+    },
+    {
+      "parentId": "774ba382-dfea-4754-a329-7ed9d3e54b62",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Dominican Republic",
+            "address": "Entrada Villas Naco, Santo Domingo Oeste, Santo Domingo, Dominican Republic",
+            "latitude": "18.5059487",
+            "addressInheritedFrom": "29f30ea2-4aa5-4f09-b103-c8a90325c6bd",
+            "type": "building",
+            "longitude": "-70.0050238"
+          }
+        }
+      ],
+      "name": "Home III",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "29f30ea2-4aa5-4f09-b103-c8a90325c6bd",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/774ba382-dfea-4754-a329-7ed9d3e54b62/29f30ea2-4aa5-4f09-b103-c8a90325c6bd",
+      "siteNameHierarchy": "Global/Santo Domingo/Home III"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "efe2be06-c516-4aaa-8403-46b8b2138a6f",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "BRZ",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "efe2be06-c516-4aaa-8403-46b8b2138a6f",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/efe2be06-c516-4aaa-8403-46b8b2138a6f",
+      "siteNameHierarchy": "Global/BRZ"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "760e872c-30a6-4087-ac03-4614da50720b",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "SBD",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "760e872c-30a6-4087-ac03-4614da50720b",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/760e872c-30a6-4087-ac03-4614da50720b",
+      "siteNameHierarchy": "Global/SBD"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Lanka",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/a07cb500-5a68-4c09-95f3-2fdfff45a593",
+      "siteNameHierarchy": "Global/Lanka"
+    },
+    {
+      "parentId": "760e872c-30a6-4087-ac03-4614da50720b",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Vietnam",
+            "address": "M\u1ec5 Tr\u00ec, 129400, Qu\u1eadn Nam T\u1eeb Li\u00eam, Hanoi, Vietnam",
+            "latitude": "21.007688",
+            "addressInheritedFrom": "6d7cb9f3-6401-4fb5-bf63-b03f8b2de23c",
+            "type": "building",
+            "longitude": "105.780806"
+          }
+        }
+      ],
+      "name": "Building 01",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "6d7cb9f3-6401-4fb5-bf63-b03f8b2de23c",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/760e872c-30a6-4087-ac03-4614da50720b/6d7cb9f3-6401-4fb5-bf63-b03f8b2de23c",
+      "siteNameHierarchy": "Global/SBD/Building 01"
+    },
+    {
+      "parentId": "efe2be06-c516-4aaa-8403-46b8b2138a6f",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Brazil",
+            "address": "Cear\u00e1, Brazil",
+            "latitude": "-4.82332698025054",
+            "addressInheritedFrom": "47c8f64d-e0a1-4fa0-b1c8-088a2f527cb6",
+            "type": "building",
+            "longitude": "-39.5981876488767"
+          }
+        }
+      ],
+      "name": "CE",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "47c8f64d-e0a1-4fa0-b1c8-088a2f527cb6",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/efe2be06-c516-4aaa-8403-46b8b2138a6f/47c8f64d-e0a1-4fa0-b1c8-088a2f527cb6",
+      "siteNameHierarchy": "Global/BRZ/CE"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "04dbb8d8-3ab5-47b4-94a3-996319f289d2",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Branch1",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "04dbb8d8-3ab5-47b4-94a3-996319f289d2",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/04dbb8d8-3ab5-47b4-94a3-996319f289d2",
+      "siteNameHierarchy": "Global/Branch1"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "774ba382-dfea-4754-a329-7ed9d3e54b62",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Santo Domingo",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "774ba382-dfea-4754-a329-7ed9d3e54b62",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/774ba382-dfea-4754-a329-7ed9d3e54b62",
+      "siteNameHierarchy": "Global/Santo Domingo"
+    },
+    {
+      "parentId": "29f30ea2-4aa5-4f09-b103-c8a90325c6bd",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "address": "Entrada Villas Naco, Santo Domingo Oeste, Santo Domingo, Dominican Republic",
+            "addressInheritedFrom": "29f30ea2-4aa5-4f09-b103-c8a90325c6bd",
+            "type": "floor"
+          }
+        },
+        {
+          "nameSpace": "mapsSummary",
+          "attributes": {
+            "rfModel": "122126",
+            "floorIndex": "1"
+          }
+        },
+        {
+          "nameSpace": "mapGeometry",
+          "attributes": {
+            "offsetX": "0.0",
+            "offsetY": "0.0",
+            "length": "100.0",
+            "width": "100.0",
+            "height": "10.0"
+          }
+        }
+      ],
+      "name": "Sala y Cocina",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "411e1a2c-f890-4b7d-9e3a-6f46d0e4f722",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/774ba382-dfea-4754-a329-7ed9d3e54b62/29f30ea2-4aa5-4f09-b103-c8a90325c6bd/411e1a2c-f890-4b7d-9e3a-6f46d0e4f722",
+      "siteNameHierarchy": "Global/Santo Domingo/Home III/Sala y Cocina"
+    },
+    {
+      "parentId": "efe2be06-c516-4aaa-8403-46b8b2138a6f",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Brazil",
+            "address": "Manaus, Amazonas, Brazil",
+            "latitude": "-3.1329",
+            "addressInheritedFrom": "858c3d83-f91f-4434-a1f9-da4701dd3529",
+            "type": "building",
+            "longitude": "-59.9865"
+          }
+        }
+      ],
+      "name": "AM",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "858c3d83-f91f-4434-a1f9-da4701dd3529",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/efe2be06-c516-4aaa-8403-46b8b2138a6f/858c3d83-f91f-4434-a1f9-da4701dd3529",
+      "siteNameHierarchy": "Global/BRZ/AM"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "38aa45aa-7552-4919-a508-23cc23c1220f",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Branch2",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "38aa45aa-7552-4919-a508-23cc23c1220f",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/38aa45aa-7552-4919-a508-23cc23c1220f",
+      "siteNameHierarchy": "Global/Branch2"
+    },
+    {
+      "parentId": "2b152c38-2d36-433a-b8b8-4d3de09f02a3",
+      "additionalInfo": [
+        {
+          "nameSpace": "mapsSummary",
+          "attributes": {
+            "rfModel": "122122",
+            "floorIndex": "1"
+          }
+        },
+        {
+          "nameSpace": "mapGeometry",
+          "attributes": {
+            "offsetX": "0.0",
+            "offsetY": "0.0",
+            "length": "100.0",
+            "width": "100.0",
+            "height": "10.0"
+          }
+        },
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "address": "Sultanwind, Amritsar, Amritsar, Punjab, India",
+            "addressInheritedFrom": "2b152c38-2d36-433a-b8b8-4d3de09f02a3",
+            "type": "floor"
+          }
+        }
+      ],
+      "name": "First Floor",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "8a673c23-21da-450b-9901-5da699f96bff",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/613f9aa8-6681-43fe-94ae-567a859d2229/9ea70b94-8f04-43f6-91a6-de78b512ca50/f7e093f9-a577-409e-b15a-26d1533b137d/2b152c38-2d36-433a-b8b8-4d3de09f02a3/8a673c23-21da-450b-9901-5da699f96bff",
+      "siteNameHierarchy": "Global/INDIA/Punjab/Amritsar/KK-Tech/First Floor"
+    },
+    {
+      "parentId": "04dbb8d8-3ab5-47b4-94a3-996319f289d2",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "United States",
+            "address": "1579 Hopkins Drive, San Jose, California 95122, United States",
+            "latitude": "37.338",
+            "addressInheritedFrom": "35b8642c-21c7-442c-9fc6-9baf17efa3cd",
+            "type": "building",
+            "longitude": "-121.832"
+          }
+        }
+      ],
+      "name": "Building01",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "35b8642c-21c7-442c-9fc6-9baf17efa3cd",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/04dbb8d8-3ab5-47b4-94a3-996319f289d2/35b8642c-21c7-442c-9fc6-9baf17efa3cd",
+      "siteNameHierarchy": "Global/Branch1/Building01"
+    },
+    {
+      "parentId": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "colombo",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "39bb5fd1-efdd-4438-a9ed-4675e468f56e",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/a07cb500-5a68-4c09-95f3-2fdfff45a593/39bb5fd1-efdd-4438-a9ed-4675e468f56e",
+      "siteNameHierarchy": "Global/Lanka/colombo"
+    },
+    {
+      "parentId": "39bb5fd1-efdd-4438-a9ed-4675e468f56e",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Sri Lanka",
+            "address": "Liberty Circle, Colombo, Sri Lanka",
+            "latitude": "6.913802072282351",
+            "addressInheritedFrom": "d0237e3f-1c7f-4867-8394-c09cc1850e65",
+            "type": "building",
+            "longitude": "79.85672345562415"
+          }
+        }
+      ],
+      "name": "c1",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "d0237e3f-1c7f-4867-8394-c09cc1850e65",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/a07cb500-5a68-4c09-95f3-2fdfff45a593/39bb5fd1-efdd-4438-a9ed-4675e468f56e/d0237e3f-1c7f-4867-8394-c09cc1850e65",
+      "siteNameHierarchy": "Global/Lanka/colombo/c1"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "UNKNOWN",
+            "address": "Tiris Zemmour, Mauritania",
+            "latitude": "23.213",
+            "addressInheritedFrom": "225e7e29-497b-4556-840c-55ed153cb659",
+            "type": "building",
+            "longitude": "-121"
+          }
+        }
+      ],
+      "name": "NB",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "225e7e29-497b-4556-840c-55ed153cb659",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/225e7e29-497b-4556-840c-55ed153cb659",
+      "siteNameHierarchy": "Global/NB"
+    },
+    {
+      "parentId": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "613f9aa8-6681-43fe-94ae-567a859d2229",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "INDIA",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "613f9aa8-6681-43fe-94ae-567a859d2229",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/613f9aa8-6681-43fe-94ae-567a859d2229",
+      "siteNameHierarchy": "Global/INDIA"
+    },
+    {
+      "parentId": "613f9aa8-6681-43fe-94ae-567a859d2229",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "613f9aa8-6681-43fe-94ae-567a859d2229",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Punjab",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "9ea70b94-8f04-43f6-91a6-de78b512ca50",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/613f9aa8-6681-43fe-94ae-567a859d2229/9ea70b94-8f04-43f6-91a6-de78b512ca50",
+      "siteNameHierarchy": "Global/INDIA/Punjab"
+    },
+    {
+      "parentId": "9ea70b94-8f04-43f6-91a6-de78b512ca50",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "613f9aa8-6681-43fe-94ae-567a859d2229",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "Amritsar",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "f7e093f9-a577-409e-b15a-26d1533b137d",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/613f9aa8-6681-43fe-94ae-567a859d2229/9ea70b94-8f04-43f6-91a6-de78b512ca50/f7e093f9-a577-409e-b15a-26d1533b137d",
+      "siteNameHierarchy": "Global/INDIA/Punjab/Amritsar"
+    },
+    {
+      "parentId": "38aa45aa-7552-4919-a508-23cc23c1220f",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "United States",
+            "address": "1579 Hopkins Drive, San Jose, California 95122, United States",
+            "latitude": "37.338",
+            "addressInheritedFrom": "8c62cdd6-e976-45f0-9546-03919dfe1776",
+            "type": "building",
+            "longitude": "-121.832"
+          }
+        }
+      ],
+      "name": "Building2",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "8c62cdd6-e976-45f0-9546-03919dfe1776",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/38aa45aa-7552-4919-a508-23cc23c1220f/8c62cdd6-e976-45f0-9546-03919dfe1776",
+      "siteNameHierarchy": "Global/Branch2/Building2"
+    },
+    {
+      "parentId": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "addressInheritedFrom": "a07cb500-5a68-4c09-95f3-2fdfff45a593",
+            "type": "area"
+          }
+        }
+      ],
+      "name": "kandy",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "adf4ee0c-5f20-4c14-b711-dcedfd1be3fa",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/a07cb500-5a68-4c09-95f3-2fdfff45a593/adf4ee0c-5f20-4c14-b711-dcedfd1be3fa",
+      "siteNameHierarchy": "Global/Lanka/kandy"
+    },
+    {
+      "parentId": "adf4ee0c-5f20-4c14-b711-dcedfd1be3fa",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "Sri Lanka",
+            "address": "Dental Junction, Kandy, Kandy, Sri Lanka",
+            "latitude": "7.270849613584872",
+            "addressInheritedFrom": "0ba11271-ae0c-43ae-83e9-cc77a4bc4a85",
+            "type": "building",
+            "longitude": "80.60928765890253"
+          }
+        }
+      ],
+      "name": "k1",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "0ba11271-ae0c-43ae-83e9-cc77a4bc4a85",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/a07cb500-5a68-4c09-95f3-2fdfff45a593/adf4ee0c-5f20-4c14-b711-dcedfd1be3fa/0ba11271-ae0c-43ae-83e9-cc77a4bc4a85",
+      "siteNameHierarchy": "Global/Lanka/kandy/k1"
+    },
+    {
+      "parentId": "f7e093f9-a577-409e-b15a-26d1533b137d",
+      "additionalInfo": [
+        {
+          "nameSpace": "Location",
+          "attributes": {
+            "country": "India",
+            "address": "Sultanwind, Amritsar, Amritsar, Punjab, India",
+            "latitude": "31.585591",
+            "addressInheritedFrom": "2b152c38-2d36-433a-b8b8-4d3de09f02a3",
+            "type": "building",
+            "longitude": "74.894184"
+          }
+        }
+      ],
+      "name": "KK-Tech",
+      "instanceTenantId": "6304ce724421f13b391918c2",
+      "id": "2b152c38-2d36-433a-b8b8-4d3de09f02a3",
+      "siteHierarchy": "52c53dea-02c2-4e2e-b5e0-5270f1ae7f6a/613f9aa8-6681-43fe-94ae-567a859d2229/9ea70b94-8f04-43f6-91a6-de78b512ca50/f7e093f9-a577-409e-b15a-26d1533b137d/2b152c38-2d36-433a-b8b8-4d3de09f02a3",
+      "siteNameHierarchy": "Global/INDIA/Punjab/Amritsar/KK-Tech"
+    }
+  ]
+}

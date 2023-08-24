@@ -12,6 +12,8 @@ def get_all_sites(token):
     headers = {"X-Auth-Token": token, "Accept": "application/json"}
     resource = "/dna/intent/api/v1/site"
     response = requests.get(BASE_URL + resource, headers=headers, verify=False).json()
+    with open(r"C:\Users\xxenc\OneDrive\Documents\enauto_coding\venv\enauto\site_data.json", "w") as sites:
+        json.dump(response,sites, indent=2)
 
 def get_single_site(site_name, token):
     token = dna_token.get_token()
@@ -36,14 +38,12 @@ def get_single_building(site_name, building_name,token):
         print(f"Encountered non-HTTP exception: {exc}")
 
 
-
-
 def main():
-    site = "San Jose"
-    building = "SJC-20"
+    site = "Branch1"
+    building = "Building01"
     token=dna_token.get_token()
-    get_all_sites(token)
-    get_single_site(site,token)
+    #get_all_sites(token)
+    #get_single_site(site,token)
     get_single_building(site, building, token)
 
 if __name__ == "__main__":
