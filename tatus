@@ -1,0 +1,113 @@
+[33mcommit ac0ee13a1007e60f6911549e42274ab9b35510d0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Thu Aug 24 15:48:38 2023 -0400
+
+    Added python file for network discovery
+
+[33mcommit 3b070199d6bc2817ae2da5535931495311b83fbf[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Thu Aug 24 12:57:16 2023 -0400
+
+    Updated DNAC Get Sites file.
+
+[33mcommit 61faa862e1de2665f581329e02c88d15b8d8ed6f[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Aug 4 14:23:39 2023 -0400
+
+    Added python file to get sites and buildings with DNAC.
+
+[33mcommit 539d4ae4debcd7cc89b0b41810042923565dfcd9[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Aug 4 09:02:17 2023 -0400
+
+    Added dial_in_telemetry example
+
+[33mcommit 4f081f8f6a367e76b5ed40dd403ace76d0e50d0e[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Wed Jul 12 21:32:39 2023 -0400
+
+    Added three restconf scripts. One to get interfaces, one to add an interface, and one to delete an interface
+
+[33mcommit 58a82d65bfe593753dc1fc30b8e655e582ac6c6f[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Sat Jul 1 14:21:04 2023 -0400
+
+    Adding Tempaltes folder for jinja2
+
+[33mcommit 31e19b17d10602895349b99b0a45e9bfeb8b99ee[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Sat Jul 1 14:17:34 2023 -0400
+
+    Modified the netmiko lab to use yaml for host file and Jinja 2 template to push commands
+
+[33mcommit c161aa575866a241dbf4ac453e54661be80fbdf4[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Sat Jul 1 13:10:11 2023 -0400
+
+    Added file to lab netmiko
+
+[33mcommit 189a510f7dd609a86ef53d73b334f2fa8eecbce5[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:40:31 2023 -0400
+
+    Added a contants file that contains the base URL for DNAC API calls. Added a python script to delete devices from DNAC using device ID.
+
+[33mcommit 2a01e2185aa7763b6b6f778bd2173a35a44d8b0a[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:21:38 2023 -0400
+
+    Deleted dnarest_api.py. No longer needed
+
+[33mcommit 9492a3d23eb9ff4e31c428535708950f72459ebe[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:20:55 2023 -0400
+
+    Deleted CCNP.py as it is no longer needed
+
+[33mcommit b030d02d11920432a5890f02bc74b853c6da0baa[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:20:04 2023 -0400
+
+    Deleted test txt files
+
+[33mcommit 38b63f21b5d1b6ae2c118b96b37c3880312dcb7b[m
+Author: Jacob Bennett <33399769+CamelJake@users.noreply.github.com>
+Date:   Fri Jun 23 17:19:06 2023 -0400
+
+    Create test3.txt
+    
+    Added test3.txt to test pulling from github.
+
+[33mcommit 056a5efe6f7f740c63dcb57c986e5c07802a3631[m
+Merge: 71a49bd 9eb0073
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:18:07 2023 -0400
+
+    Merge branch 'main' of https://github.com/CamelJake/enauto
+
+[33mcommit 71a49bd7c8701389c25bab2c0a2749a98b066db3[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 17:16:03 2023 -0400
+
+    Added Test message
+
+[33mcommit 9eb0073f02576fa8d29289fb0044ae655d3d78fa[m
+Merge: 69c7945 aa8545f
+Author: Jacob Bennett <33399769+CamelJake@users.noreply.github.com>
+Date:   Fri Jun 23 16:43:35 2023 -0400
+
+    Merge pull request #1 from CamelJake/master
+    
+    Added test.txt file to experiment with merging
+
+[33mcommit aa8545f2dca89c539a141ee9344a8612460e6398[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 16:41:47 2023 -0400
+
+    Added test.txt file to experiment with merging
+
+[33mcommit 69c7945d857fba3859a3731edee24e77fa501fe0[m
+Author: Jacob Bennett <xxencryptedsoldierxx@gmail.com>
+Date:   Fri Jun 23 16:22:55 2023 -0400
+
+    Added basic DNAC API Python scripts
