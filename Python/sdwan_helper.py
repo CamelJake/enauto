@@ -22,13 +22,19 @@ class CiscoSDWAN:
             data={"j_username": username, "j_password": password},
             verify=self.verify
         )
-        print(auth_response.text)
         if auth_response.text:
             auth_response.status_code=401
             auth_response.reason = "UNAUTHORIZED; check username/password"
             auth_response.raise_for_status()
         
         self.headers = {"Accept": "application/json", "Content-Type":"application/json"}
+
+        #Gather XSRF token
+        self.xsrf_token=self.session.get(f"{self.base_url}/dataservice/client/token", headers=self.headers, verify=self.verify)
+
+
+
+
 
     def get_instance_always_on():
         #Creates a session with the always on Cisco Sandbox
@@ -46,33 +52,39 @@ class CiscoSDWAN:
                                         verify=self.verify,
                                         )
         response.raise_for_status()
-        #print(json.dumps(response.json(), indent=2))
+        print(json.dumps(response.json(), indent=2))
         return response
     
+
     def get_alarm_count(self):
         path="dataservice/alarms/count"
         return self._req(path)
+
 
     def get_control_status(self, model=None):
         path="dataservice/device/control/count"
         params={"devce-model": model} if model else None
         return self._req(path)
     
+
     #Certificates#
     def get_certificate_summary(self):
         path="dataservice/certificate/stats/summary"
         print("----Certificate Summary----")
         return self._req(path)
 
+
     def get_controller_certs(self):
         path="dataservice/certificate/vsmart/list"
         print("----VSmart Certs----")
         return self._req(path)
 
+
     def get_root_cert(self):
         path="dataservice/certificate/rootcertificate"
         print("----Root Certificate----")
         return self._req(path)
+
 
     #Real-Time Statsitics
     #Transport tunnel stats
@@ -82,10 +94,19 @@ class CiscoSDWAN:
         return self._req(path, params={"deviceId": deviceId})
 
     #Control conneciton status information. 
-    def get_control_connection_info(self, deviceId):
+    def get_control_count(self, deviceId):
+        #Get count of control status of vsmarts and vedges
         path="dataservice/device/control/count"
         print("----Control Connection Info----")
         return self._req(path, params={"deviceId": deviceId})
+    
+    def get_control_connections(self, deviceId):
+        #Get connections list from a device (realtime)
+        path="dataservice/device/control/connections"
+        print("----Control Connection Info----")
+        return self._req(path, params={"deviceId": deviceId})
+    
+
     def get_feature_templates(self):
         path="dataservice/template/feature"
         print("---Feature Templates---")
@@ -156,8 +177,41 @@ class CiscoSDWAN:
         return self._req(resource="dataservice/template/device/config/attachfeature", method="POST", json=body)
     
     def get_devices(self, deviceType):
-        return self._req("/dataservice/device", params={"device-model":deviceType})
+        return self._req("dataservice/device", params={"device-type":deviceType})
 
+    def define_policy_objects(self, obj_type, name, entries):
+        path = f"dataservice/template/policy/list/{obj_type}"
+        body={
+            "name" : name,
+            "description" : "test subscription",
+            "type" : obj_type,
+            "entries" : entries
+        }
+        return self._req(path, json=body, method="post")
+    
+
+    def get_policy_vsmart(self):
+        return self._req(resource="dataservice/template/policy/vsmart")
+    
+
+    def get_users(self):
+        return self._req(resource="dataservice/admin/user")
+    
+    def create_user(self, username, password, groups):
+        body={
+            "groups": groups,
+            "username": username,
+            "password": password,
+            "description": "test",
+
+        }
+        return self._req(resource="dataservice/admin/user", method="post", json=body)
+    
+    def create_usergroup(self, body):
+        #User must pass in a json body that will define the group. Returns groupId
+        return self._req("dataservice/admin/usergroup", method="post", json=body)
+
+    
 
 
 
