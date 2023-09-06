@@ -31,16 +31,19 @@ class CiscoMeraki:
         return self._req(resource=f"organizations/{org_id}/networks")
     
     def create_organization_network(self, body, org_id):
-        resource=f"organization/{org_id}/networks"
-        return self._req(resource, method="post", json=body)
+        resource=f"organizations/{org_id}/networks"
+        print(body)
+        return self._req(resource, method="post", jsonbody=body)
     
     def update_organization_network(self, net_id):
         resource=f"networks/{net_id}"
         body={
+            "name": "CCNP TORTURE CHAMBER",
             "notes": "Updated network with update_organization_network method",
+            "productTypes": ["appliance", "switch", "camera", "wireless"],
             "tags": ["ENAUTO", "YEET"],
         }
-        return self._req(resource, method="put", json=body)
+        return self._req(resource, method="put", jsonbody=body)
     
 
     def claim_network_devices(self, serials, net_id):
@@ -48,7 +51,7 @@ class CiscoMeraki:
         body={
             "serials":serials,
         }
-        return self._req(resource, method="post", json=body)
+        return self._req(resource, method="post", jsonbody=body)
     
 
     def remove_network_device(self, serials, net_id):
@@ -57,7 +60,7 @@ class CiscoMeraki:
             body={
                 "serial": sn,
             }
-            return self._req(resource, method="post", json=body)
+            return self._req(resource, method="post", jsonbody=body)
 
 
     def update_network_device(self, serial):
@@ -67,46 +70,85 @@ class CiscoMeraki:
             "lat": 37.4180951010362,
             "lng": -122.098531723022,
             "serial": serial,
-            "mac": "00:11:22:33:44:55",
             "tags": [ "recently-added" ]
         }
-        return self._req(resource, method="put", json=body)
+        return self._req(resource, method="put", jsonbody=body)
     
-    def create_webook(self, net_id, body):
-        resource=f"/networks/{net_id}/webooks/httpservers"
+    def create_webook(self, net_id, url):
+        resource=f"networks/{net_id}/webhooks/httpServers"
         body={
-            "name": "Test Webhook",
-            "url": "https://",
-            "sharedSecret": "secret",
+            "name": "Jacobs Test Webhook",
+            "url": url,
         }
-        return self._req(resource, method="post", json=body)
+        return self._req(resource, method="post", jsonbody=body)
     
 
     def test_webhook(self, net_id, webhookUrl):
         #Tests webhook with generic power supply down alert. Returns test id)
-        resource=f"/networks/{net_id}/webhooks/webhooktests"
+        resource=f"networks/{net_id}/webhooks/webhookTests"
         body={"url": webhookUrl}
-        return self._req(resource, method="post", json=body)
+        return self._req(resource, method="post", jsonbody=body)
     
 
     def get_webhook_test_result(self, net_id, test_id):
-        resource=f"/networks/{net_id}/webhooks/webhooktests/{test_id}"
+        resource=f"networks/{net_id}/webhooks/webhookTests/{test_id}"
         return self._req(resource)
 
 
     def get_wireless_ssids(self, net_id):
-        return self._req(resource=f"/networks/{net_id}/wireless/ssids")
+        return self._req(resource=f"networks/{net_id}/wireless/ssids")
     
     def update_wireless_ssid(self, net_id, ssid_number):
         body={
             "name": "test Update",
             "enabled": False,
-            "authMode": "8021x-radius",
+            "authMode": "psk",
             "psk": "test123!",
         }
         return self._req(resource=f"networks/{net_id}/wireless/ssids/{ssid_number}", 
                          method="put", 
-                         json=body
+                         jsonbody=body
                          )
+    
+    def get_splash_login_attempts(self, net_id, ssid_id):
+        return self._req(resource=f"networks/{net_id}/splashLoginAttemps", params={"ssidNumber": ssid_id})
+    
+    def update_wireless_splash_settings(self, net_id, ssid_id, splashUrl):
+        body={
+            "splashUrl": splashUrl,
+            "useSplashUrl": True,
+            "redirectUrl": "https://google.com",
+            "useRedirectUrl": True,
+        }
+        return self._req(resource=f"networks/{net_id}/wireless/ssids/{ssid_id}/splash/settings", method="put", jsonbody=body)
+    
+
+    def get_wireless_splash_settings(self, net_id, ssid_id):
+        return self._req(resource=f"networks/{net_id}/wireless/ssids/{ssid_id}/splash/settings")
+    
+    #Cameras
+
+    def get_live_videlink(self, sn):
+        return self._req(resource=f"devices/{sn}/camera/videoLink")
+
+    def get_mv_snapshot(self, sn):
+        return self._req(resource=f"devices/{sn}/camera/generateSnapshot")
+    
+    def get_mv_qualitysettings(self, sn):
+        return self._req(resource=f"devices/{sn}/camera/qualityAndRetention")
+
+    def get_mv_analytics(self, sn, timeFrame):
+        return self._req(resource=f"devices/{sn}/camera/analytics/{timeFrame}")
+    
+    #Returns historical records for an analytic zone aggregated per minute
+    def get_mv_history_zones(self, sn, zoneId):
+        return self._req(resource=f"devices/{sn}/camera/analytics/zones/{zoneId}/history")
+    
+    #Returns all coinfigured analytic zones for a camera
+    def get_mv_analytic_zones(self ,sn):
+        return self._req(resource=f"devices/{sn}/camera/analytics/zones")
+
+
+
     
 
